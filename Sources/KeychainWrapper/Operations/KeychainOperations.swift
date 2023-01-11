@@ -41,7 +41,7 @@ internal class KeychainOperations: NSObject {
             kSecAttrAccount: account,
             kSecAttrService: service,
             kSecAttrAccessible: kSecAttrAccessibleAfterFirstUnlock,
-            kSecReturnData: value
+            kSecValueData: value
         ] as NSDictionary, nil)
         
         guard status == errSecSuccess else { throw KeychainWrapperError.operationError }

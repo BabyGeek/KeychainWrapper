@@ -37,7 +37,6 @@ final class KeychainWrapperTests: XCTestCase {
     
     func testRetrieveString() throws {
         try testSaveString()
-        try testSaveString()
         
         guard let data = try KeychainWrapper.get(account: testKey) else {
             XCTFail("Could not retrieve keychain")
