@@ -84,7 +84,7 @@ internal class KeychainOperations: NSObject {
         case errSecItemNotFound:
             return nil
         default:
-            throw KeychainWrapperError.keychainCreatingError
+            throw KeychainWrapperError.operationError
         }
     }
     
@@ -105,7 +105,8 @@ internal class KeychainOperations: NSObject {
     /// - Throws: `KeychainWrapperError` type that is equal to `.operationError` if the operation failed to delete all
     internal static func deleteAll() throws {
         let status = SecItemDelete([
-            kSecClass: kSecClassGenericPassword
+            kSecClass: kSecClassGenericPassword,
+            kSecAttrService: service
         ] as NSDictionary)
         
         guard status == errSecSuccess else { throw KeychainWrapperError.operationError }
