@@ -15,7 +15,7 @@ You can also clone the repo into your project and link it to your target depende
 
 ## Usage
 
-In this version of the package you can store credentials based on `String` type
+In this version of the package you can store credentials.
 
 ### Import the package where you need it
 
@@ -28,7 +28,7 @@ You can then try to get the credential on the concerned account
 ```Swift
 let credentials = try? KeychainWrapper.get(account: "<YOUR_ACCOUNT_KEY>")
 ```
-You can also store new credentials, it will automatically update the values if the account already exists
+You can also store new credentials, it will automatically update the values if the account already exists, value must have a `Data` type
 
 ```Swift
 try KeychainWrapper.set(value: credentialsData, account: "<YOUR_ACCOUNT_KEY>")
