@@ -88,8 +88,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "KeychainWrapper/**/*.swift"
-  spec.exclude_files = "KeychainWrapper/Exclude"
+  spec.source_files  = "Sources/KeychainWrapper/**/*.swift"
+  spec.exclude_files = "Sources/KeychainWrapper/Exclude"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
