@@ -21,9 +21,11 @@ You can also clone the repo into your project and link it to your target depende
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/BabyGeek/SwiftKeychainWrapper.git", .upToNextMajor(from: "1.0.0"))
+    .package(url: "https://github.com/BabyGeek/KeychainWrapper.git", .upToNextMajor(from: "1.0.0"))
 ]
 ```
+
+or Add Package -> https://github.com/BabyGeek/KeychainWrapper -> Up to Next Major 1.0.0
 
 ---
 
