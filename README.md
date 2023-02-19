@@ -12,7 +12,7 @@ You can also clone the repo into your project and link it to your target depende
 ### CocoaPods
 
 ```swift
-    pod 'KeychainWrapper', :git => 'https://github.com/BabyGeek/SwiftKeychainWrapper.git', :tag => "v1.0.0"
+    pod 'KeychainWrapper', :git => 'https://github.com/BabyGeek/KeychainWrapper.git', :tag => "v1.0.0"
 ```
 
 ---
