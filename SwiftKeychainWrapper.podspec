@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "SwiftKeychainWrapper"
+  spec.name         = "KeychainWrapper"
   spec.version      = "1.0.0"
   spec.summary      = "Wrapper for using Keychain in Swift"
 
