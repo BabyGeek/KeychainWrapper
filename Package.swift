@@ -5,11 +5,17 @@ import PackageDescription
 
 let package = Package(
     name: "KeychainWrapper",
+    platforms: [.macOS(.v10_13),
+                .iOS(.v11),
+                .tvOS(.v11),
+                .watchOS(.v4)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "KeychainWrapper",
-            targets: ["KeychainWrapper"]),
+            targets: [
+                "KeychainWrapper"
+            ]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -23,6 +29,11 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "KeychainWrapperTests",
-            dependencies: ["KeychainWrapper"]),
+            dependencies: [
+                "KeychainWrapper"
+            ]),
+    ],
+    swiftLanguageVersions: [
+        .v5
     ]
 )
