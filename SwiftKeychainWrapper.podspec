@@ -91,9 +91,6 @@ Pod::Spec.new do |spec|
   spec.source_files  = "KeychainWrapper", "KeychainWrapper/**/*.{swift}"
   spec.exclude_files = "KeychainWrapper/Exclude"
 
-  # spec.public_header_files = "KeychainWrapper/**/*.h"
-
-
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  A list of resources included with the Pod. These are copied into the
